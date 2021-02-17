@@ -54,14 +54,23 @@ performance_analysis:
 - the policy loading and saving is mostly managed via naming conventions
 #### model notes
 2-hidden layer (size 64) MLP, for the value function and the policy.
-
-
-#### Results
-[insert images here]
-
-
 #### How to enable Logging in tensorboard
 run in your comand line
 *tensorboard --logdir=path/to/tensorboard/data* \
 Where as the fixed standard out: "path/to/tensorboard/data" = "~/documents/tb"
 
+
+#### Results
+After around 600 training and data gathering iterations the policy learns a stabilizing grasp.
+The followind images show a policy trained with the reward function **weighted_or_dist**.
+<p align="center">
+  <img src="https://github.com/JonasMedu/learn_grasping/blob/main/read_me_images/noise_weighted_or_distMon_Dec__7_13_01_05_2020_28fea92c-be03-41fd-b6f4-95713e8b46c7_pos1_50_cropped.png" width="200" title="stable position a">
+  <img src="https://github.com/JonasMedu/learn_grasping/blob/main/read_me_images/noise_weighted_or_distMon_Dec__7_13_01_05_2020_28fea92c-be03-41fd-b6f4-95713e8b46c7_pos2_50_cropped.png" width="200" alt="stable position b">
+  <img src="https://github.com/JonasMedu/learn_grasping/blob/main/read_me_images/noise_weighted_or_distMon_Dec__7_13_01_05_2020_28fea92c-be03-41fd-b6f4-95713e8b46c7_pos3_50_cropped.png" width="200" alt="stable position c">
+  <img src="https://github.com/JonasMedu/learn_grasping/blob/main/read_me_images/noise_weighted_or_distMon_Dec__7_13_01_05_2020_28fea92c-be03-41fd-b6f4-95713e8b46c7_pos_test_50_cropped.png" width="200" alt="stable position d">  
+</p>
+
+The second experiment shows how a simulation of the *upper* trajectory optimization influence the learning capabilities of the stabilizing grasp. The graphs shows the training progression with the influence of noise. The graph shows 20 training sessions, each of which as a different noise (simulated *upper* trajectory optimization signal) input. The noise is spaced between .1 and 20 in a geometric progression. The color of the lines help to indicate the the noise magnitude. The higher the noise, the darker the line. A gradient from bright, at the button, to dark (at the top) appears in the graph.   
+<p align="center">
+  <img src="https://github.com/JonasMedu/learn_grasping/blob/main/read_me_images/Training_progress_noisy_run.png" width="600" title="Grapsing performance under the influence of noise.">
+</p>
