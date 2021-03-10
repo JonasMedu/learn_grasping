@@ -3,9 +3,7 @@ This project aims to train the Allegro hand for in-hand manipulation (in simulat
 The project defines two experimental setup. The first one aims to find a reward function definition to enable training progression. The second setup simulates a trajectory optimization in form of noise. 
 #### framework overview
 **tensorflow 1.x** for machine learning
-
 **pybullet** for the Allegro hand simulation
-
 **gym(.Env)** as superclass for hand  
 
 #### packages overview
@@ -32,7 +30,7 @@ setting_utils:
 performance_analysis:
   1. holds code to make graphs for the training progression etc.
 
-### quick start
+### quick start (curerntly unavailable; I do not have any licence information about the allegro Hand implementation)
   1. install requirements (e.g. via pip), the requirements file
   2. adapt hard coded logging folder in setting_utils.paramhandler
   3. run learn_lower with gui=True
