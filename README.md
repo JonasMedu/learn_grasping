@@ -60,7 +60,7 @@ Where as the fixed standard out: "path/to/tensorboard/data" = "~/documents/tb"
 
 #### Results
 After around 600 training and data gathering iterations the policy learns a stabilizing grasp.
-The followind images show a policy trained with the reward function **weighted_or_dist**.
+The following images show a policy trained with the reward function **weighted_or_dist**.
 <p align="center">
   <img src="https://github.com/JonasMedu/learn_grasping/blob/main/read_me_images/noise_weighted_or_distMon_Dec__7_13_01_05_2020_28fea92c-be03-41fd-b6f4-95713e8b46c7_pos1_50_cropped.png" width="200" title="stable position a">
   <img src="https://github.com/JonasMedu/learn_grasping/blob/main/read_me_images/noise_weighted_or_distMon_Dec__7_13_01_05_2020_28fea92c-be03-41fd-b6f4-95713e8b46c7_pos2_50_cropped.png" width="200" alt="stable position b">
