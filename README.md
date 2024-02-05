@@ -72,3 +72,5 @@ The second experiment shows how a simulation of the *upper* trajectory optimizat
 <p align="center">
   <img src="https://github.com/JonasMedu/learn_grasping/blob/main/read_me_images/Training_progress_noisy_run.png" width="600" title="Grapsing performance under the influence of noise.">
 </p>
+
+Each iteration has a fixed number of simulation steps. The lower the number of trajectories, the more stable is the grasp of the bar.
